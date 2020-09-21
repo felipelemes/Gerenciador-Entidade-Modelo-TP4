@@ -12,5 +12,7 @@ namespace Dominio
         void Remover(Contrato entidade);
 
         void Editar(Contrato entidadeEditada, Contrato entidadeAntiga);
+
+       
     }
 }

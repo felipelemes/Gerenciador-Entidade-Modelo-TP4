@@ -20,7 +20,7 @@ namespace WorkerService
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-
+           
             string opcao;
             do
             {

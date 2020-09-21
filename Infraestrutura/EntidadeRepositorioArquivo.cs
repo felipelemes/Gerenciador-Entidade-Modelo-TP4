@@ -18,7 +18,7 @@ namespace Infraestrutura
         public IList<Contrato> Pesquisar(string nomeDaEmpresaContratada)
         {
             List<Contrato> listaComTodosContratos = new List<Contrato>();
-            var diretorioRaiz = new DirectoryInfo(@"C:\Users\felip\source\repos\Tp4-Felipe-Lemes\Infraestrutura\data\");
+            var diretorioRaiz = new DirectoryInfo(@"C:\Users\felip\source\repos\AT-Felipe-Lemes\Infraestrutura\data\");
             DataSerializer dataSerializer = new DataSerializer();
 
             foreach (FileInfo file in diretorioRaiz.GetFiles())
@@ -35,7 +35,7 @@ namespace Infraestrutura
         public void Adicionar(Contrato contrato)
         {
             Contrato novoContrato = contrato;
-            string filePath = $"C:\\Users\\felip\\source\\repos\\Tp4-Felipe-Lemes\\Infraestrutura\\data\\{contrato.NomeDaEmpresaContratada}-{contrato.NumeroDoContrato}.data";
+            string filePath = $"C:\\Users\\felip\\source\\repos\\AT-Felipe-Lemes\\Infraestrutura\\data\\{contrato.NomeDaEmpresaContratada}-{contrato.NumeroDoContrato}.data";
             DataSerializer dataSerializer = new DataSerializer();
 
 
@@ -44,7 +44,7 @@ namespace Infraestrutura
         }
         public void Remover(Contrato contrato)
         {
-            File.Delete($"C:\\Users\\felip\\source\\repos\\Tp4-Felipe-Lemes\\Infraestrutura\\data\\{contrato.NomeDaEmpresaContratada}-{contrato.NumeroDoContrato}.data");
+            File.Delete($"C:\\Users\\felip\\source\\repos\\AT-Felipe-Lemes\\Infraestrutura\\data\\{contrato.NomeDaEmpresaContratada}-{contrato.NumeroDoContrato}.data");
 
         }
 
@@ -54,5 +54,6 @@ namespace Infraestrutura
             Remover(contratoAntigo);
         }
 
+        
     }
 }

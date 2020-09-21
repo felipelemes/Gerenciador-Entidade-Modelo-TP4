@@ -29,5 +29,7 @@ namespace Infraestrutura
             Adicionar(contratoEditado);
             Remover(contratoAntigo);
         }
+
+        
     }
 }
