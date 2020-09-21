@@ -6,7 +6,11 @@ namespace Dominio
 {
     public interface IEntidadeRepositorio
     {
-        IList<Entidade> Pesquisar(string termoDePesquisa);
-        void Adicionar(Entidade entidade);
+        IList<Contrato> Pesquisar(string termoDePesquisa);
+        void Adicionar(Contrato entidade);
+
+        void Remover(Contrato entidade);
+
+        void Editar(Contrato entidadeEditada, Contrato entidadeAntiga);
     }
 }

@@ -16,7 +16,7 @@ namespace WorkerService
             Host.CreateDefaultBuilder(args)
                 .ConfigureServices((hostContext, services) =>
                 {
-                    services.AddSingleton<IEntidadeRepositorio, EntidadeRepositorioComUmTipoDeColecao>();
+                    services.AddSingleton<IEntidadeRepositorio, EntidadeRepositorioArquivo>();
                     services.AddHostedService<Worker>();
                 });
     }
